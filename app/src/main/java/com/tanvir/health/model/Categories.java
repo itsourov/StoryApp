@@ -1,4 +1,4 @@
-package net.sourov.storyapp.model;
+package com.tanvir.health.model;
 
 public class Categories {
 

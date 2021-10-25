@@ -17,6 +17,7 @@
     android:id="@+id/toolbarOnSD"/>
 
         <androidx.cardview.widget.CardView
+           app:cardBackgroundColor="@color/white"
             android:layout_margin="10dp"
             app:cardCornerRadius="10dp"
             android:layout_width="match_parent"
@@ -48,6 +49,11 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="20dp"/>
-
+        <include
+            android:id="@+id/bottomBanner"
+            layout="@layout/bottom_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
+
 </ScrollView>

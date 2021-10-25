@@ -8,12 +8,49 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:620777148199:android:aff19a7cd855bd3279e302",
+        "android_client_info": {
+          "package_name": "com.tanvir.health"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620777148199-51sp8p1stks11bg0l6hg7sq7rn1mrp4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi3bFUbYaXNOfiDD2G70KKew3xSAobwME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620777148199-51sp8p1stks11bg0l6hg7sq7rn1mrp4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:620777148199:android:b8432cc3d6a443c279e302",
         "android_client_info": {
           "package_name": "net.sourov.storyapp"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "620777148199-beakprc4ftmsrpurl65osev41ek8d13l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.sourov.storyapp",
+            "certificate_hash": "f4b56c9ade844d669debc3120370caaf127d733d"
+          }
+        },
         {
           "client_id": "620777148199-51sp8p1stks11bg0l6hg7sq7rn1mrp4e.apps.googleusercontent.com",
           "client_type": 3

@@ -7,7 +7,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "net.sourov.storyapp"
+        applicationId "com.tanvir.health"
         minSdk 21
         targetSdk 31
         versionCode 1

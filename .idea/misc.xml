@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/sourov/AndroidStudioProjects/StoryApp2/app/src/main/res/drawable/shine.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/sourov/AndroidStudioProjects/StoryApp2/app/src/main/res/layout/activity_category_list.xml" value="0.15" />
         <entry key="..\:/Users/sourov/AndroidStudioProjects/StoryApp2/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/sourov/AndroidStudioProjects/StoryApp2/app/src/main/res/layout/activity_only_text.xml" value="0.2" />
         <entry key="..\:/Users/sourov/AndroidStudioProjects/StoryApp2/app/src/main/res/layout/activity_story_details.xml" value="0.2" />
         <entry key="..\:/Users/sourov/AndroidStudioProjects/StoryApp2/app/src/main/res/layout/activity_story_list.xml" value="0.2" />
+        <entry key="..\:/Users/sourov/AndroidStudioProjects/StoryApp2/app/src/main/res/layout/bottom_banner.xml" value="0.33" />
         <entry key="..\:/Users/sourov/AndroidStudioProjects/StoryApp2/app/src/main/res/layout/cat_item.xml" value="0.2" />
         <entry key="..\:/Users/sourov/AndroidStudioProjects/StoryApp2/app/src/main/res/layout/story_item.xml" value="0.25" />
         <entry key="..\:/Users/sourov/AndroidStudioProjects/StoryApp2/app/src/main/res/layout/toolbar.xml" value="0.2" />

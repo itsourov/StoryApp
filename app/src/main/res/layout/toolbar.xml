@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FF0973"
+    android:background="@color/main"
     android:elevation="4dp"
     app:title="@string/app_name"
     app:menu="@menu/main2"

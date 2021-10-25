@@ -1,6 +1,8 @@
-package net.sourov.storyapp;
+package com.tanvir.health;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -16,8 +18,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import net.sourov.storyapp.adapter.StAdapter;
-import net.sourov.storyapp.model.Stories;
+import com.tanvir.health.adapter.StAdapter;
+import com.tanvir.health.model.Stories;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,6 +59,27 @@ public class StoryListActivity extends AppCompatActivity {
             }
             startActivity(a);
             return false;
+        });
+
+        initBottomBanner();
+    }
+
+    private void initBottomBanner() {
+        findViewById(R.id.bottomRateUs).setOnClickListener(v -> {
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + getPackageName())));
+            } catch (ActivityNotFoundException e) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + getPackageName())));
+            }
+        });
+        findViewById(R.id.bottomMoreApps).setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/developer?id=Smart+Corporation"))));
+        findViewById(R.id.bottomShare).setOnClickListener(v -> {
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            String shareBody = "Download the app from below link \n https://play.google.com/store/apps/details?id=" + getPackageName();
+            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject Here");
+            sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
+            startActivity(Intent.createChooser(sharingIntent, "Share via"));
         });
     }
 

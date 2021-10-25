@@ -1,4 +1,4 @@
-package net.sourov.storyapp.adapter;
+package com.tanvir.health.adapter;
 
 
 import android.content.Context;
@@ -14,9 +14,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.database.annotations.NotNull;
 
-import net.sourov.storyapp.R;
-import net.sourov.storyapp.StoryDetails;
-import net.sourov.storyapp.model.Stories;
+import com.tanvir.health.R;
+import com.tanvir.health.StoryDetails;
+import com.tanvir.health.model.Stories;
 
 import java.util.List;
 

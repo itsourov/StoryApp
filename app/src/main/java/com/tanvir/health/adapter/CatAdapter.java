@@ -1,4 +1,4 @@
-package net.sourov.storyapp.adapter;
+package com.tanvir.health.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,9 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.google.firebase.database.annotations.NotNull;
 
-import net.sourov.storyapp.R;
-import net.sourov.storyapp.StoryListActivity;
-import net.sourov.storyapp.model.Categories;
+import com.tanvir.health.R;
+import com.tanvir.health.StoryListActivity;
+import com.tanvir.health.model.Categories;
 
 import java.util.List;
 
