@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "net.sourov.storyapp",
+  "applicationId": "com.tanvir.health",
   "variantName": "release",
   "elements": [
     {

@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         shine = findViewById(R.id.shine);
         startBtnOnMA = findViewById(R.id.startBtnOnMA);
 
-        shineStart();
+
 
 
         startBtnOnMA.setOnClickListener(v -> {
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             }
-        }, 3, 3, TimeUnit.SECONDS);
+        }, 1, 3, TimeUnit.SECONDS);
     }
 
     private void getStory(String catid, String stid) {
@@ -99,10 +99,12 @@ public class MainActivity extends AppCompatActivity {
                 Stories stories = snapshot.getValue(Stories.class);
 
                 Intent intent = new Intent(MainActivity.this,StoryDetails.class);
-                assert stories != null;
-                intent.putExtra("title",stories.getTitle());
-                intent.putExtra("details",stories.getDetails());
-                startActivity(intent);
+                if (stories != null) {
+                    intent.putExtra("title",stories.getTitle());
+                    intent.putExtra("details",stories.getDetails());
+                    startActivity(intent);
+                }
+
 
             }
 

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -47,7 +48,7 @@ public class CatAdapter extends RecyclerView.Adapter<CatAdapter.catHolder>{
         Categories contacts = catList.get(position);
 
         Glide.with(context).load(contacts.getCatimage()).into(holder.imageViewOnCatItem);
-        holder.imageViewOnCatItem.setOnClickListener(new View.OnClickListener() {
+        holder.cardVOnCatItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -71,11 +72,13 @@ public class CatAdapter extends RecyclerView.Adapter<CatAdapter.catHolder>{
     class catHolder extends RecyclerView.ViewHolder{
 
      ImageView imageViewOnCatItem;
+     CardView cardVOnCatItem;
 
         public catHolder(@NonNull @NotNull View itemView) {
             super(itemView);
 
             imageViewOnCatItem = itemView.findViewById(R.id.imageViewOnCatItem);
+            cardVOnCatItem = itemView.findViewById(R.id.cardVOnCatItem);
 
         }
     }
